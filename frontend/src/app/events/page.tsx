@@ -215,7 +215,7 @@ export default function EventsPage() {
   );
 }
 
-export const CloseIcon = () => {
+const CloseIcon = () => {
   return (
     <motion.svg
       initial={{
