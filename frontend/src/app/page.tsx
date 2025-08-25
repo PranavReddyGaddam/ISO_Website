@@ -2,7 +2,7 @@ import Link from "next/link";
 // import ShinyText from "@/components/TextAnimations/ShinyText";
 import TextType from "@/components/TextType/TextType";
 import {
-  FaPalette,
+  
   FaTheaterMasks,
   FaGraduationCap,
   FaMusic,

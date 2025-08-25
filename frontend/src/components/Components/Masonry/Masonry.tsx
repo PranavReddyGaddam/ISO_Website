@@ -226,7 +226,7 @@ const Masonry: React.FC<MasonryProps> = ({
     });
 
     hasMounted.current = true;
-  }, [grid, imagesReady, stagger, animateFrom, blurToFocus, duration, ease]);
+  }, [grid, imagesReady, stagger, animateFrom, blurToFocus, duration, ease, getInitialPosition]);
 
   const handleMouseEnter = (id: string, element: HTMLElement) => {
     if (scaleOnHover) {
