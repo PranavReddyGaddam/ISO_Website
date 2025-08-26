@@ -156,7 +156,7 @@ export default function EventsPage() {
             </div>
           ) : null}
         </AnimatePresence>
-        <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 max-w-4xl mx-auto">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 p-8 max-w-4xl mx-auto">
           <ul className="w-full gap-4">
             {cards.map((card) => (
               <motion.div
@@ -167,7 +167,7 @@ export default function EventsPage() {
                   console.log("Mouse down on card:", card.title)
                 }
                 onMouseUp={() => console.log("Mouse up on card:", card.title)}
-                className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer border-b border-gray-200 last:border-b-0"
+                className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer border-b border-gray-200 dark:border-gray-600 last:border-b-0"
                 style={{
                   pointerEvents: "auto",
                   position: "relative",
@@ -187,13 +187,13 @@ export default function EventsPage() {
                   <div className="">
                     <motion.h3
                       layoutId={`title-${card.title}-${id}`}
-                      className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left"
+                      className="font-medium text-gray-900 dark:text-neutral-200 text-center md:text-left"
                     >
                       {card.title}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${card.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
+                      className="text-gray-700 dark:text-neutral-400 text-center md:text-left"
                     >
                       {card.description}
                     </motion.p>
@@ -201,7 +201,7 @@ export default function EventsPage() {
                 </div>
                 <motion.button
                   layoutId={`button-${card.title}-${id}`}
-                  className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0"
+                  className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 dark:bg-gray-700 hover:bg-green-500 hover:text-white text-black dark:text-white mt-4 md:mt-0"
                   onClick={(e) => e.stopPropagation()}
                 >
                   {card.ctaText}
@@ -257,7 +257,7 @@ const cards = [
     ctaLink: "https://www.facebook.com/mark_zuckerberg",
     content: () => {
       return (
-        <p>
+        <p className="text-neutral-600 dark:text-neutral-300">
           Raas Garba is a traditional Gujarati dance form performed during Navratri celebrations. 
           It involves circular movements and rhythmic clapping, creating a vibrant and energetic atmosphere. 
           Participants dress in colorful traditional attire and dance to devotional music, celebrating the 
@@ -275,7 +275,7 @@ const cards = [
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
-        <p>
+        <p className="text-neutral-600 dark:text-neutral-300">
           Roshni, our Diwali celebration, is one of the most anticipated events of the year. This festival 
           of lights symbolizes the victory of light over darkness and knowledge over ignorance. The event 
           features traditional diya lighting ceremonies, rangoli competitions, cultural performances, and 
@@ -293,7 +293,7 @@ const cards = [
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
-        <p>
+        <p className="text-neutral-600 dark:text-neutral-300">
           Holi is a vibrant festival of colors that celebrates love, joy, and the arrival of spring. 
           This exuberant event features color throwing, traditional music, dance performances, and 
           delicious festive foods like gujiya and thandai. Participants come together to play with 
@@ -311,7 +311,7 @@ const cards = [
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
-        <p>
+        <p className="text-neutral-600 dark:text-neutral-300">
           Spardha is our annual cricket tournament that brings together cricket enthusiasts from across 
           the university. This competitive yet friendly tournament features multiple teams competing in 
           various formats of the game. Beyond just cricket, it&apos;s an opportunity for networking, building 
@@ -329,7 +329,7 @@ const cards = [
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
-        <p>
+        <p className="text-neutral-600 dark:text-neutral-300">
           Parichay is our premier networking event that connects current students with successful alumni 
           and industry professionals. The event features resume workshops, career guidance sessions, 
           mock interviews, and networking opportunities. Alumni share their career journeys, offer 

@@ -110,7 +110,7 @@ export default function GalleryPage() {
 
   return (
     <div className="min-h-screen p-8 bg-gray-50 dark:bg-gray-900">
-      <div className="h-[700px] mb-2">
+      <div className="h-[1300px] sm:h-[500px] mb-20">
         <Masonry
           items={sampleItems}
           animateFrom="random"
@@ -152,7 +152,7 @@ export default function GalleryPage() {
       )}
 
       {/* View Full Gallery Button */}
-      <div className="text-center">
+      <div className="text-center mt-16 sm:mt-20">
         <button
           onClick={() =>
             window.open(
