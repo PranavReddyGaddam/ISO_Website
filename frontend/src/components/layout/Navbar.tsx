@@ -86,7 +86,7 @@ export default function Navbar() {
            <div className="absolute left-0 flex items-center">
              <Link href="/" className="flex items-center group relative">
                <div className="relative">
-                 <span className="font-aeonik text-sm sm:text-base md:text-lg lg:text-xl font-medium tracking-wider bg-gradient-to-br from-saffron to-gold bg-clip-text text-black/70">
+                 <span className="font-aeonik text-sm sm:text-base md:text-lg lg:text-xl font-medium tracking-wider bg-gradient-to-br from-saffron to-gold bg-clip-text text-black/70 dark:text-white/70">
                    Indian Student Organization
                  </span>
                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-saffron to-gold group-hover:w-full transition-all duration-500 ease-out"></div>
@@ -101,7 +101,7 @@ export default function Navbar() {
                <Link
                  key={item.name}
                  href={item.href}
-                 className="text-gray-700 hover:text-saffron px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-1 relative group"
+                 className="text-gray-700 dark:text-gray-300 hover:text-saffron dark:hover:text-saffron px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-1 relative group"
                >
                  {item.name}
                  <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-saffron to-gold group-hover:w-full group-hover:left-0 transition-all duration-300"></div>
@@ -115,7 +115,7 @@ export default function Navbar() {
                <Link
                  key={item.name}
                  href={item.href}
-                 className="text-gray-700 hover:text-saffron px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-1 relative group"
+                 className="text-gray-700 dark:text-gray-300 hover:text-saffron dark:hover:text-saffron px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-1 relative group"
                >
                  {item.name}
                  <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-saffron to-gold group-hover:w-full group-hover:left-0 transition-all duration-300"></div>
@@ -135,7 +135,7 @@ export default function Navbar() {
            <div className="md:hidden absolute right-0 flex items-center">
              <button
                type="button"
-               className="text-gray-700 hover:text-saffron focus:outline-none focus:ring-2 focus:ring-saffron p-1"
+               className="text-gray-700 dark:text-gray-300 hover:text-saffron dark:hover:text-saffron focus:outline-none focus:ring-2 focus:ring-saffron p-1"
                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
              >
                <span className="sr-only">Open main menu</span>
@@ -148,12 +148,12 @@ export default function Navbar() {
              {/* Mobile Navigation */}
        {mobileMenuOpen && (
          <div className="md:hidden">
-           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-sm border-t border-gray-200">
+           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700">
              {navigation.map((item) => (
                <Link
                  key={item.name}
                  href={item.href}
-                 className="text-gray-700 hover:text-saffron block px-3 py-3 rounded-md text-base font-medium transition-colors duration-200 hover:bg-gray-50"
+                 className="text-gray-700 dark:text-gray-300 hover:text-saffron dark:hover:text-saffron block px-3 py-3 rounded-md text-base font-medium transition-colors duration-200 hover:bg-gray-50 dark:hover:bg-gray-700"
                  onClick={() => setMobileMenuOpen(false)}
                >
                  {item.name}

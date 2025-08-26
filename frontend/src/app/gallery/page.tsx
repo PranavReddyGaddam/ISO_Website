@@ -109,7 +109,7 @@ export default function GalleryPage() {
   };
 
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen p-8 bg-gray-50 dark:bg-gray-900">
       <div className="h-[700px] mb-2">
         <Masonry
           items={sampleItems}
@@ -160,7 +160,7 @@ export default function GalleryPage() {
               "_blank"
             )
           }
-          className="inline-block bg-gradient-to-r from-saffron to-gold text-gray-900 font-semibold py-4 px-8 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl active:scale-95 transform cursor-pointer border-2 border-amber-600 relative z-10 touch-manipulation"
+          className="inline-block bg-gradient-to-r from-saffron to-gold text-gray-900 dark:text-gray-100 font-semibold py-4 px-8 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl active:scale-95 transform cursor-pointer border-2 border-amber-600 relative z-10 touch-manipulation"
         >
           View Full Gallery
         </button>
