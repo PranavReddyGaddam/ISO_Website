@@ -22,7 +22,7 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 sm:space-y-8">
             <div className="space-y-3 sm:space-y-4 mb-8 sm:mb-12 lg:mb-16">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-medium leading-tight tracking-tight font-aeonik text-slate-700 px-2">
+              <h1 className="text-3xl sm:text-8xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-medium leading-tight tracking-tight font-aeonik text-slate-700 dark:text-slate-200 px-2">
                 Your Desi Family in the Heart of{' '}
                 <span
                   className="bg-gradient-to-r bg-clip-text text-transparent"
@@ -34,7 +34,7 @@ export default function Home() {
                 </span>
               </h1>
 
-              <p className="mx-auto max-w-xl mt-3 sm:mt-5 text-base sm:text-lg lg:text-xl font-medium text-balance text-slate-600 px-4">
+              <p className="mx-auto max-w-xl mt-3 sm:mt-5 text-base sm:text-lg lg:text-xl font-medium text-balance text-slate-600 dark:text-slate-300 px-4">
                 Experience SJSU beyond classrooms through celebration,
                 collaboration, and community
               </p>
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-1 justify-center items-center mb-8 sm:mb-12 px-4">
               <Link
                 href="/events"
-                className="group bg-white text-slate-800 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/50 focus:outline-none shadow-lg w-full sm:w-auto"
+                className="group bg-white dark:bg-gray-800 text-slate-800 dark:text-slate-200 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/50 focus:outline-none shadow-lg w-full sm:w-auto"
               >
                 <span className="flex items-center justify-center space-x-2">
                   <span>Join Our Events</span>
@@ -66,7 +66,7 @@ export default function Home() {
 
               <Link
                 href="/about"
-                className="group bg-white/40 border-2 border-white text-slate-800 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-white hover:text-slate-800 transition-all duration-300 focus:ring-4 focus:ring-white/50 focus:outline-none shadow-lg w-full sm:w-auto"
+                className="group bg-white/40 dark:bg-gray-800/40 border-2 border-white dark:border-gray-600 text-slate-800 dark:text-slate-200 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-white dark:hover:bg-gray-700 hover:text-slate-800 dark:hover:text-slate-200 transition-all duration-300 focus:ring-4 focus:ring-white/50 focus:outline-none shadow-lg w-full sm:w-auto"
               >
                 <span className="flex items-center justify-center space-x-2">
                   <span>Learn Our Story</span>
