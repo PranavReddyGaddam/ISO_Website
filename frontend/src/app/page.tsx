@@ -22,7 +22,7 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 sm:space-y-8">
             <div className="space-y-3 sm:space-y-4 mb-8 sm:mb-12 lg:mb-16">
-              <h1 className="text-3xl sm:text-8xl md:text-5xl lg:text-5xl xl:text-7xl 2xl:text-9xl font-medium leading-tight tracking-tight font-aeonik text-slate-700 dark:text-slate-200 px-2">
+              <h1 className="text-3xl sm:text-8xl md:text-5xl lg:text-5xl xl:text-7xl 2xl:text-7xl font-medium leading-tight tracking-tight font-aeonik text-slate-700 dark:text-slate-200 px-2">
                 Your Desi Family in the Heart of{' '}
                 <span
                   className="bg-gradient-to-r bg-clip-text text-transparent"
